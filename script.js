@@ -8,7 +8,7 @@ form.addEventListener("submit",(e)=>{
 	} else if (!form.name.value && form.year.value) {
 		document.querySelector("#url").innerText=`${str}?year=${form.year.value}`;
 	} else{
-		document.querySelector("#url").innerText=`${str}?name=${form.name.value}&year${form.year.value}`;
+		document.querySelector("#url").innerText=`${str}?name=${form.name.value}&year=${form.year.value}`;
 	}
 	form.reset();
 });
